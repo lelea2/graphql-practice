@@ -1,0 +1,31 @@
+{
+  "name": "graphql-sql",
+  "version": "0.0.1",
+  "description": "* GraphQL with SQL Database (Postgres)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-node5": "^10.9.0",
+    "babel-register": "^6.23.0",
+    "babel-relay-plugin": "^0.6.3",
+    "bluebird": "^3.4.7",
+    "express": "^4.14.1",
+    "express-graphql": "^0.4.13",
+    "faker": "^3.1.0",
+    "graphql": "^0.4.18",
+    "graphql-relay": "^0.3.6",
+    "lodash": "^4.17.4",
+    "pg": "^6.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0"
+  }
+}
