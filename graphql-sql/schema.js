@@ -8,69 +8,131 @@ import {
   GraphQLList,
   GraphQLNonNull
 } from 'graphql';
+import uuid from 'node-uuid';
+import Faker from 'faker';
 
 import Db from './db';
 
-const Post = new GraphQLObjectType({
-  name: 'Post',
-  description: 'Blog post',
+const Transaction = new GraphQLObjectType({
+  name: 'Transaction',
+  description: 'Transaction',
   fields () {
     return {
-      title: {
+      id: {
         type: GraphQLString,
-        resolve (post) {
-          return post.title;
+        resolve (transaction) {
+          return transaction.id;
         }
       },
-      content: {
+      address: {
         type: GraphQLString,
-        resolve (post) {
-          return post.content;
+        resolve (transaction) {
+          return `${transaction.streetAddress}, ${transaction.streetName}`;
         }
       },
-      person: {
-        type: Person,
-        resolve (post) {
-          return post.getPerson();
+      city: {
+        type: GraphQLString,
+        resolve (transaction) {
+          return transaction.content;
+        }
+      },
+      state: {
+        type: GraphQLString,
+        resolve (transaction) {
+          return transaction.state;
+        }
+      },
+      zip: {
+        type: GraphQLString,
+        resolve (transaction) {
+          return transaction.zip;
+        }
+      },
+      price: {
+        type: GraphQLInt,
+        resolve (transaction) {
+          return transaction.price;
+        }
+      },
+      sold_price: {
+        type: GraphQLInt,
+        resolve (transaction) {
+          return transaction.sold_price;
+        }
+      },
+      mls_number: {
+        type: GraphQLString,
+        resolve (transaction) {
+          return transaction.mls_number;
+        }
+      },
+      expiration_date: {
+        type: GraphQLString,
+        resolve (transaction) {
+          return transaction.expiration_date;
+        }
+      },
+      acceptance_date: {
+        type: GraphQLString,
+        resolve (transaction) {
+          return transaction.acceptance_date;
+        }
+      },
+      contract_date: {
+        type: GraphQLString,
+        resolve (transaction) {
+          return transaction.contract_date;
+        }
+      },
+      closing_date: {
+        type: GraphQLString,
+        resolve (transaction) {
+          return transaction.closing_date;
+        }
+      },
+      creator_id: {
+        type: User,
+        resolve (transaction) {
+          return transaction.getUser();
         }
       }
     };
   }
 });
 
-const Person = new GraphQLObjectType({
-  name: 'Person',
-  description: 'This represents a Person',
+const User = new GraphQLObjectType({
+  name: 'User',
+  description: 'This represents a User',
   fields: () => {
     return {
       id: {
-        type: GraphQLInt,
-        resolve (person) {
-          return person.id;
+        type: GraphQLString,
+        resolve (user) {
+          return user.id;
         }
       },
       firstName: {
         type: GraphQLString,
-        resolve (person) {
-          return person.firstName;
+        resolve (user) {
+          return user.firstName;
         }
       },
       lastName: {
         type: GraphQLString,
-        resolve (person) {
-          return person.lastName;
+        resolve (user) {
+          return user.lastName;
         }
       },
       email: {
         type: GraphQLString,
-        resolve (person) {
-          return person.email;
+        resolve (user) {
+          return user.email;
         }
       },
-      posts: {
-        type: new GraphQLList(Post),
-        resolve (person) {
-          return person.getPosts();
+      transactions: {
+        type: new GraphQLList(Transaction),
+        resolve (user) {
+          return user.getTransactions();
         }
       }
     };
@@ -82,24 +144,24 @@ const Query = new GraphQLObjectType({
   description: 'Root query object',
   fields: () => {
     return {
-      people: {
-        type: new GraphQLList(Person),
+      user: {
+        type: new GraphQLList(User),
         args: {
           id: {
-            type: GraphQLInt
+            type: GraphQLString
           },
           email: {
             type: GraphQLString
           }
         },
         resolve (root, args) {
-          return Db.models.person.findAll({ where: args });
+          return Db.models.user.findAll({ where: args });
         }
       },
-      posts: {
-        type: new GraphQLList(Post),
+      transaction: {
+        type: new GraphQLList(Transaction),
         resolve (root, args) {
-          return Db.models.post.findAll({ where: args });
+          return Db.models.transaction.findAll({ where: args });
         }
       }
     };
@@ -111,8 +173,8 @@ const Mutation = new GraphQLObjectType({
   description: 'Functions to set stuff',
   fields () {
     return {
-      addPerson: {
-        type: Person,
+      addUser: {
+        type: User,
         args: {
           firstName: {
             type: new GraphQLNonNull(GraphQLString)
@@ -125,10 +187,38 @@ const Mutation = new GraphQLObjectType({
           }
         },
         resolve (source, args) {
-          return Db.models.person.create({
+          return Db.models.user.create({
+            id: uuid.v1(),
             firstName: args.firstName,
             lastName: args.lastName,
             email: args.email.toLowerCase()
+          });
+        }
+      },
+      addTransaction: {
+        type: Transaction,
+        args: {
+          userId: {
+            type: new GraphQLNonNull(GraphQLString)
+          },
+          streetAddress: {
+            type: new GraphQLNonNull(GraphQLString)
+          },
+          streetName: {
+            type: new GraphQLNonNull(GraphQLString)
+          }
+        },
+        resolve (source, args) {
+          return Db.models.transaction.create({
+            id: uuid.v1(),
+            streetAddress: args.streetAddress,
+            streetName: args.streetName,
+            city: Faker.address.city(),
+            state: Faker.address.state(),
+            zip: Faker.address.zipCode(),
+            price: parseInt(Faker.commerce.price()),
+            sold_price: parseInt(Faker.commerce.price()),
+            userId: args.userId
           });
         }
       }

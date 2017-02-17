@@ -1,0 +1,243 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/kdao/.nvm/versions/node/v4.6.2/bin/node',
+1 verbose cli   '/Users/kdao/.nvm/versions/node/v4.6.2/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'graphql-custom-types',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.11
+3 info using node@v4.6.2
+4 verbose install initial load of /Users/kdao/Prototypes/graphql-practice/graphql-sql/package.json
+5 warn package.json graphql-sql@0.0.1 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-cli/package.json
+7 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-core/package.json
+8 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-polyfill/package.json
+9 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-preset-node5/package.json
+10 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-register/package.json
+11 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-relay-plugin/package.json
+12 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/bluebird/package.json
+13 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/express-graphql/package.json
+15 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/faker/package.json
+16 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql/package.json
+17 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types/package.json
+18 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-relay/package.json
+19 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/lodash/package.json
+20 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/node-uuid/package.json
+21 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/pg/package.json
+22 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/pg-hstore/package.json
+23 verbose installManyTop reading scoped package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/sequelize/package.json
+24 info package.json node-uuid@1.4.7 No license field.
+25 info package.json pg-hstore@2.3.2 No license field.
+26 verbose readDependencies loading dependencies from /Users/kdao/Prototypes/graphql-practice/graphql-sql/package.json
+27 verbose install graphql-custom-types is installed as 0.7.1
+28 silly cache add args [ 'graphql-custom-types', null ]
+29 verbose cache add spec graphql-custom-types
+30 silly cache add parsed spec Result {
+30 silly cache add   raw: 'graphql-custom-types',
+30 silly cache add   scope: null,
+30 silly cache add   name: 'graphql-custom-types',
+30 silly cache add   rawSpec: '',
+30 silly cache add   spec: 'latest',
+30 silly cache add   type: 'tag' }
+31 silly addNamed graphql-custom-types@latest
+32 verbose addNamed "latest" is being treated as a dist-tag for graphql-custom-types
+33 info addNameTag [ 'graphql-custom-types', 'latest' ]
+34 silly mapToRegistry name graphql-custom-types
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'graphql-custom-types',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   name: 'graphql-custom-types',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/graphql-custom-types
+39 verbose addNameTag registry:https://registry.npmjs.org/graphql-custom-types not in flight; fetching
+40 verbose request uri https://registry.npmjs.org/graphql-custom-types
+41 verbose request no auth needed
+42 info attempt registry request try #1 at 5:03:19 PM
+43 verbose request using bearer token for auth
+44 verbose request id c530f4dda7f1655c
+45 verbose etag W/"5829d7b4-5333"
+46 verbose lastModified Mon, 14 Nov 2016 15:26:44 GMT
+47 http request GET https://registry.npmjs.org/graphql-custom-types
+48 http 304 https://registry.npmjs.org/graphql-custom-types
+49 verbose headers { server: 'nginx/1.10.1',
+49 verbose headers   'last-modified': 'Mon, 14 Nov 2016 15:26:44 GMT',
+49 verbose headers   etag: '"5829d7b4-5333"',
+49 verbose headers   'cache-control': 'max-age=300',
+49 verbose headers   'accept-ranges': 'bytes',
+49 verbose headers   date: 'Fri, 17 Feb 2017 01:03:20 GMT',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'x-served-by': 'cache-lax8627-LAX',
+49 verbose headers   'x-cache': 'MISS',
+49 verbose headers   'x-cache-hits': '0',
+49 verbose headers   'x-timer': 'S1487293399.929072,VS0,VE158',
+49 verbose headers   vary: 'Accept-Encoding' }
+50 silly get cb [ 304,
+50 silly get   { server: 'nginx/1.10.1',
+50 silly get     'last-modified': 'Mon, 14 Nov 2016 15:26:44 GMT',
+50 silly get     etag: '"5829d7b4-5333"',
+50 silly get     'cache-control': 'max-age=300',
+50 silly get     'accept-ranges': 'bytes',
+50 silly get     date: 'Fri, 17 Feb 2017 01:03:20 GMT',
+50 silly get     via: '1.1 varnish',
+50 silly get     connection: 'keep-alive',
+50 silly get     'x-served-by': 'cache-lax8627-LAX',
+50 silly get     'x-cache': 'MISS',
+50 silly get     'x-cache-hits': '0',
+50 silly get     'x-timer': 'S1487293399.929072,VS0,VE158',
+50 silly get     vary: 'Accept-Encoding' } ]
+51 verbose etag https://registry.npmjs.org/graphql-custom-types from cache
+52 verbose get saving graphql-custom-types to /Users/kdao/.npm/registry.npmjs.org/graphql-custom-types/.cache.json
+53 verbose correctMkdir /Users/kdao/.npm correctMkdir not in flight; initializing
+54 silly addNameTag next cb for graphql-custom-types with tag latest
+55 silly addNamed graphql-custom-types@0.7.1
+56 verbose addNamed "0.7.1" is a plain semver version for graphql-custom-types
+57 silly cache afterAdd graphql-custom-types@0.7.1
+58 verbose afterAdd /Users/kdao/.npm/graphql-custom-types/0.7.1/package/package.json not in flight; writing
+59 verbose correctMkdir /Users/kdao/.npm correctMkdir not in flight; initializing
+60 verbose afterAdd /Users/kdao/.npm/graphql-custom-types/0.7.1/package/package.json written
+61 silly install resolved [ { name: 'graphql-custom-types',
+61 silly install resolved     repository:
+61 silly install resolved      { type: 'git',
+61 silly install resolved        url: 'git+https://github.com/stylesuxx/graphql-custom-types.git' },
+61 silly install resolved     version: '0.7.1',
+61 silly install resolved     description: 'Collection of custom graphql types like Email, URL, password and many more',
+61 silly install resolved     author: { name: 'Chris Landa', email: 'stylesuxx@gmail.com' },
+61 silly install resolved     license: 'MIT',
+61 silly install resolved     main: 'lib/index.js',
+61 silly install resolved     scripts:
+61 silly install resolved      { clean: 'rm -rf lib',
+61 silly install resolved        build: 'npm run clean && ./node_modules/.bin/babel src --out-dir lib',
+61 silly install resolved        test: 'npm run build && ./node_modules/.bin/babel-node ./tests/index.js',
+61 silly install resolved        lint: 'eslint src tests',
+61 silly install resolved        prepublish: 'npm run build',
+61 silly install resolved        preversion: 'npm test' },
+61 silly install resolved     devDependencies:
+61 silly install resolved      { babel: '^6.3.13',
+61 silly install resolved        'babel-cli': '^6.3.15',
+61 silly install resolved        'babel-eslint': '^6.0.4',
+61 silly install resolved        'babel-preset-es2015': '^6.3.13',
+61 silly install resolved        eslint: '^3.5.0',
+61 silly install resolved        tape: '^4.2.2' },
+61 silly install resolved     peerDependencies: { graphql: '^0.6.0 || ^0.7.0 || ^0.8.0' },
+61 silly install resolved     keywords: [ 'es6', 'es2015', 'GraphQL', 'express-graphql', 'GraphQL types' ],
+61 silly install resolved     engines: { node: '>= 4.5.0' },
+61 silly install resolved     gitHead: 'ef7ffc0126337377f8db0683b411431c62380aec',
+61 silly install resolved     bugs: { url: 'https://github.com/stylesuxx/graphql-custom-types/issues' },
+61 silly install resolved     homepage: 'https://github.com/stylesuxx/graphql-custom-types#readme',
+61 silly install resolved     _id: 'graphql-custom-types@0.7.1',
+61 silly install resolved     _shasum: 'eb7e4f649d66f9a917730ce40fb17a7404053f6f',
+61 silly install resolved     _from: 'graphql-custom-types@latest',
+61 silly install resolved     _npmVersion: '3.3.12',
+61 silly install resolved     _nodeVersion: '5.5.0',
+61 silly install resolved     _npmUser: { name: 'stylesuxx', email: 'stylesuxx@gmail.com' },
+61 silly install resolved     dist:
+61 silly install resolved      { shasum: 'eb7e4f649d66f9a917730ce40fb17a7404053f6f',
+61 silly install resolved        tarball: 'https://registry.npmjs.org/graphql-custom-types/-/graphql-custom-types-0.7.1.tgz' },
+61 silly install resolved     maintainers: [ [Object] ],
+61 silly install resolved     _npmOperationalInternal:
+61 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+61 silly install resolved        tmp: 'tmp/graphql-custom-types-0.7.1.tgz_1479137203924_0.06962698861025274' },
+61 silly install resolved     directories: {},
+61 silly install resolved     _resolved: 'https://registry.npmjs.org/graphql-custom-types/-/graphql-custom-types-0.7.1.tgz',
+61 silly install resolved     readme: 'ERROR: No README data found!' } ]
+62 info install graphql-custom-types@0.7.1 into /Users/kdao/Prototypes/graphql-practice/graphql-sql
+63 info installOne graphql-custom-types@0.7.1
+64 verbose installOne of graphql-custom-types to /Users/kdao/Prototypes/graphql-practice/graphql-sql not in flight; installing
+65 verbose correctMkdir /Users/kdao/.npm/_locks correctMkdir not in flight; initializing
+66 verbose lock using /Users/kdao/.npm/_locks/graphql-custom-types-9effff8691405d87.lock for /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+67 silly install write writing graphql-custom-types 0.7.1 to /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+68 verbose unbuild node_modules/graphql-custom-types
+69 info preuninstall graphql-custom-types@0.7.1
+70 info uninstall graphql-custom-types@0.7.1
+71 verbose unbuild rmStuff graphql-custom-types@0.7.1 from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules
+72 info postuninstall graphql-custom-types@0.7.1
+73 silly gentlyRm /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types is being purged from base /Users/kdao/Prototypes/graphql-practice/graphql-sql
+74 verbose gentlyRm don't care about contents; nuking /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+75 silly vacuum-fs purging /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+76 silly vacuum-fs quitting because other entries in /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules
+77 verbose tar unpack /Users/kdao/.npm/graphql-custom-types/0.7.1/package.tgz
+78 verbose tar unpacking to /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+79 silly gentlyRm /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types is being purged
+80 verbose gentlyRm don't care about contents; nuking /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+81 silly gunzTarPerm modes [ '755', '644' ]
+82 silly gunzTarPerm extractEntry package.json
+83 silly gunzTarPerm extractEntry .npmignore
+84 silly gunzTarPerm extractEntry README.md
+85 silly gunzTarPerm extractEntry CHANGELOG.md
+86 silly gunzTarPerm extractEntry lib/factory.js
+87 silly gunzTarPerm extractEntry lib/index.js
+88 silly gunzTarPerm extractEntry lib/scalars.js
+89 silly gunzTarPerm extractEntry lib/types.js
+90 verbose write writing to /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types/package.json
+91 info preinstall graphql-custom-types@0.7.1
+92 verbose readDependencies loading dependencies from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types/package.json
+93 silly prepareForInstallMany adding graphql@^0.6.0 || ^0.7.0 || ^0.8.0 from graphql-custom-types peerDependencies
+94 warn peerDependencies The peer dependency graphql@^0.6.0 || ^0.7.0 || ^0.8.0 included from graphql-custom-types will no
+95 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+96 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+97 verbose readDependencies loading dependencies from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types/package.json
+98 silly install resolved []
+99 verbose about to build /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+100 info build /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+101 info linkStuff graphql-custom-types@0.7.1
+102 silly linkStuff graphql-custom-types@0.7.1 has /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules as its parent node_modules
+103 verbose linkBins graphql-custom-types@0.7.1
+104 verbose linkMans graphql-custom-types@0.7.1
+105 verbose rebuildBundles graphql-custom-types@0.7.1
+106 info install graphql-custom-types@0.7.1
+107 info postinstall graphql-custom-types@0.7.1
+108 verbose readDependencies loading dependencies from /Users/kdao/Prototypes/graphql-practice/graphql-sql/package.json
+109 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-cli/package.json
+110 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-core/package.json
+111 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-polyfill/package.json
+112 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-preset-node5/package.json
+113 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-register/package.json
+114 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/babel-relay-plugin/package.json
+115 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/bluebird/package.json
+116 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/express/package.json
+117 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/express-graphql/package.json
+118 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/faker/package.json
+119 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql/package.json
+120 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types/package.json
+121 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-relay/package.json
+122 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/lodash/package.json
+123 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/node-uuid/package.json
+124 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/pg/package.json
+125 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/pg-hstore/package.json
+126 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/sequelize/package.json
+127 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/.bin/babel/package.json
+128 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/.bin/babel-doctor/package.json
+129 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/.bin/babel-external-helpers/package.json
+130 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/.bin/babel-node/package.json
+131 verbose targetResolver reading package data from /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/.bin/uuid/package.json
+132 verbose already installed skipping graphql@^0.6.0 || ^0.7.0 || ^0.8.0 /Users/kdao/Prototypes/graphql-practice/graphql-sql
+133 silly install resolved []
+134 verbose unlock done using /Users/kdao/.npm/_locks/graphql-custom-types-9effff8691405d87.lock for /Users/kdao/Prototypes/graphql-practice/graphql-sql/node_modules/graphql-custom-types
+135 verbose validateInstall loading /Users/kdao/Prototypes/graphql-practice/graphql-sql/package.json for validation
+136 verbose stack Error: The package graphql@0.4.18 does not satisfy its siblings' peerDependencies requirements!
+136 verbose stack     at /Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/lib/install.js:125:32
+136 verbose stack     at /Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/lib/install.js:268:7
+136 verbose stack     at /Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+136 verbose stack     at /Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+136 verbose stack     at cb (/Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+136 verbose stack     at /Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+136 verbose stack     at cb (/Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+136 verbose stack     at /Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+136 verbose stack     at cb (/Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+136 verbose stack     at /Users/kdao/.nvm/versions/node/v4.6.2/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+137 verbose cwd /Users/kdao/Prototypes/graphql-practice/graphql-sql
+138 error Darwin 15.6.0
+139 error argv "/Users/kdao/.nvm/versions/node/v4.6.2/bin/node" "/Users/kdao/.nvm/versions/node/v4.6.2/bin/npm" "install" "graphql-custom-types" "--save"
+140 error node v4.6.2
+141 error npm  v2.15.11
+142 error code EPEERINVALID
+143 error peerinvalid The package graphql@0.4.18 does not satisfy its siblings' peerDependencies requirements!
+143 error peerinvalid Peer express-graphql@0.4.13 wants graphql@^0.4.16
+143 error peerinvalid Peer graphql-relay@0.3.6 wants graphql@~0.4.2
+143 error peerinvalid Peer graphql-custom-types@0.7.1 wants graphql@^0.6.0 || ^0.7.0 || ^0.8.0
+144 verbose exit [ 1, true ]

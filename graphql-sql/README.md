@@ -16,35 +16,45 @@ GraphQL with SQL Database (Postgres): Query and mutation in graphQL
 
 ```
 {
-  people {
-    id
-  }
-}
-
-{
-  post {
+  user {
     id,
-    title,
-    content
+    firstName,
+    lastName,
+    email
   }
 }
 
 {
-  posts {
-    title,
-    person {
-      firstName,
-      posts {
-        content
-      }
+  transaction {
+    id,
+    address,
+    zip,
+    state,
+    price,
+    sold_price
+  }
+}
+
+{
+  user {
+    id,
+    transactions {
+      id,
+      address
     }
   }
 }
 
-mutation addPerson {
-  addPerson(firstName: "Khanh", lastName: "Dao", email: "ktest@test.com") {
+mutation addUser {
+  addUser(firstName: "Khanh", lastName: "Dao", email: "ktest@test.com") {
     id,
     email
+  }
+}
+
+mutation addTransaction {
+  addTransaction(userId: "dc1fbe80-f4d8-11e6-acb5-d1f39e1f0493", streetAddress: "1234A", streetName: "Main St") {
+    id
   }
 }
 
